@@ -16,7 +16,7 @@ def syb():
     for sybmol in sybmols:
         df = rich()
         # /*--------------------------存入数据库--------------------*/
-        engine = create_engine("mysql+pymysql://root:cjr622622@localhost:3306/study?charset=utf8")
+        engine = create_engine("mysql+pymysql://root:xxx@localhost:3306/study?charset=utf8")
         # engine = create_engine("mysql+pymysql://【此处填用户名】:【此处填密码】@【此处填host】:【此处填port】/【此处填数据库的名称】?charset=utf8")
         df.to_sql(name=sybmol, con=engine, if_exists='replace', index=False)# if_exists='replace'自动建表
         # /*--------------------------存入csv文件-------------------*/

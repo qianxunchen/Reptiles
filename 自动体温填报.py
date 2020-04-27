@@ -23,9 +23,9 @@ def test_a():
     url = "http://jx.ylnu.net/xsdj/login.htm1"
     d.get(url)
 
-    d.find_element_by_xpath('//*[@id="UserName"]').send_keys('201806404109')
+    d.find_element_by_xpath('//*[@id="UserName"]').send_keys('学号')
     sleep(1)
-    d.find_element_by_xpath('//*[@name="pwd"]').send_keys('cjr440')
+    d.find_element_by_xpath('//*[@name="pwd"]').send_keys('密码')
 
     sleep(1)
 
